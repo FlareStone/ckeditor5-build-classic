@@ -5,7 +5,7 @@
 
 /* globals document */
 
-import ClassicEditor from '../src/ckeditor';
+import ClassicEditor from '../src/ckeditor-classic';
 import BaseClassicEditor from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
 import { describeMemoryUsage, testMemoryUsage } from '@ckeditor/ckeditor5-core/tests/_utils/memory';
 

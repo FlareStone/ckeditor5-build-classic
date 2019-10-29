@@ -17,14 +17,20 @@ module.exports = {
 	devtool: 'source-map',
 	performance: { hints: false },
 
-	entry: path.resolve( __dirname, 'src', 'ckeditor.js' ),
+	resolveLoader: {
+		modules: [ path.join( __dirname, './loaders' ), 'node_modules' ]
+	},
+
+	entry: {
+		Classic: path.resolve( __dirname, 'src', 'ckeditor-classic.js' ),
+	},
 
 	output: {
 		// The name under which the editor will be exported.
-		library: 'ClassicEditor',
+		library: 'CkEditor[name]',
 
 		path: path.resolve( __dirname, 'build' ),
-		filename: 'ckeditor.js',
+		filename: 'ckeditor-[name].js',
 		libraryTarget: 'umd',
 		libraryExport: 'default'
 	},
@@ -47,8 +53,7 @@ module.exports = {
 		new CKEditorWebpackPlugin( {
 			// UI language. Language codes follow the https://en.wikipedia.org/wiki/ISO_639-1 format.
 			// When changing the built-in language, remember to also change it in the editor's configuration (src/ckeditor.js).
-			language: 'en',
-			additionalLanguages: 'all'
+			language: 'zh-CN',
 		} ),
 		new webpack.BannerPlugin( {
 			banner: bundler.getLicenseBanner(),
@@ -80,6 +85,10 @@ module.exports = {
 							minify: true
 						} )
 					},
+					{
+						// test: /.js$/,
+						loader: 'lowercase-file',
+					}
 				]
 			}
 		]
