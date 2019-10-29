@@ -54,7 +54,6 @@
     "@ckeditor/ckeditor5-mention": "^15.0.0",
     "@ckeditor/ckeditor5-typing": "latest",
     "@ckeditor/ckeditor5-upload": "latest",
-    "@mycolorway/ckeditor5-hr": "0.0.1",
     "ckeditor5-line-height-plugin": "^0.1.2",
     "eslint": "^5.5.0",
     "eslint-config-ckeditor5": "^2.0.0",
