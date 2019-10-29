@@ -82,82 +82,82 @@ ClassicEditor.builtinPlugins = [
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
-	language: 'zh-CN',
-	toolbar: {
-		items: [
-			'heading',
-			'|',
-			'fontsize',
-			'fontFamily',
-			'fontcolor',
-			'fontBackgroundColor',
-			'|',
-			'bold',
-			'italic',
-			'underline',
-			'strikethrough',
-			'highlight',
-			'code',
-			'|',
-			'alignment',
-			'lineHeight',
-			'outdent',
-			'indent',
-			'|',
-			'numberedList',
-			'bulletedList',
-			'|',
-			'link',
-			'blockquote',
-			'imageUpload',
-			'insertTable',
-			'horizontalLine',
-			'|',
-			'undo',
-			'redo',
-		]
-	},
-	table: {
-		contentToolbar: [ 'tableColumn', 'tableRow', 'mergeTableCells' ],
-	},
-	fontFamily: {
-		options: [
-			'default',
-			'Arial',
-			'Times New Roman',
-			'monospace',
-			'宋体',
-			'仿宋',
-			'微软雅黑',
-			'黑体',
-		],
-	},
-	image: {
-		// You need to configure the image toolbar, too, so it uses the new style buttons.
-		toolbar: [ 'imageTextAlternative', '|', 'imageStyle:alignLeft', 'imageStyle:full', 'imageStyle:alignRight' ],
-
-		styles: [
-			// This option is equal to a situation where no style is applied.
-			'full',
-
-			// This represents an image aligned to the left.
-			'alignLeft',
-
-			// This represents an image aligned to the right.
-			'alignRight',
-		],
-		resizeUnit: 'px',
-	},
-	mention: {
-		feeds: [
-			{
-				marker: '@',
-				feed: [ '@迪恩', '@塞雷娅', '@青禾', '@圣魈', '@吉姆', '@秀则' ],
-				// minimumCharacters: 1,
-			},
-		],
-	},
-	lineHeight: { // specify your otions in the lineHeight config object. Default values are [ 0, 0.5, 1, 1.5, 2 ]
-		options: [ 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3 ]
-	}
+	// language: 'zh-CN',
+	// toolbar: {
+	// 	items: [
+	// 		'heading',
+	// 		'|',
+	// 		'fontsize',
+	// 		'fontFamily',
+	// 		'fontcolor',
+	// 		'fontBackgroundColor',
+	// 		'|',
+	// 		'bold',
+	// 		'italic',
+	// 		'underline',
+	// 		'strikethrough',
+	// 		'highlight',
+	// 		'code',
+	// 		'|',
+	// 		'alignment',
+	// 		'lineHeight',
+	// 		'outdent',
+	// 		'indent',
+	// 		'|',
+	// 		'numberedList',
+	// 		'bulletedList',
+	// 		'|',
+	// 		'link',
+	// 		'blockquote',
+	// 		'imageUpload',
+	// 		'insertTable',
+	// 		'horizontalLine',
+	// 		'|',
+	// 		'undo',
+	// 		'redo',
+	// 	]
+	// },
+	// table: {
+	// 	contentToolbar: [ 'tableColumn', 'tableRow', 'mergeTableCells' ],
+	// },
+	// fontFamily: {
+	// 	options: [
+	// 		'default',
+	// 		'Arial',
+	// 		'Times New Roman',
+	// 		'monospace',
+	// 		'宋体',
+	// 		'仿宋',
+	// 		'微软雅黑',
+	// 		'黑体',
+	// 	],
+	// },
+	// image: {
+	// 	// You need to configure the image toolbar, too, so it uses the new style buttons.
+	// 	toolbar: [ 'imageTextAlternative', '|', 'imageStyle:alignLeft', 'imageStyle:full', 'imageStyle:alignRight' ],
+	//
+	// 	styles: [
+	// 		// This option is equal to a situation where no style is applied.
+	// 		'full',
+	//
+	// 		// This represents an image aligned to the left.
+	// 		'alignLeft',
+	//
+	// 		// This represents an image aligned to the right.
+	// 		'alignRight',
+	// 	],
+	// 	resizeUnit: 'px',
+	// },
+	// mention: {
+	// 	feeds: [
+	// 		{
+	// 			marker: '@',
+	// 			feed: [ '@迪恩', '@塞雷娅', '@青禾', '@圣魈', '@吉姆', '@秀则' ],
+	// 			// minimumCharacters: 1,
+	// 		},
+	// 	],
+	// },
+	// lineHeight: { // specify your otions in the lineHeight config object. Default values are [ 0, 0.5, 1, 1.5, 2 ]
+	// 	options: [ 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3 ]
+	// }
 };

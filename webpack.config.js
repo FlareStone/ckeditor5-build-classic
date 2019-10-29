@@ -17,10 +17,6 @@ module.exports = {
 	devtool: 'source-map',
 	performance: { hints: false },
 
-	resolveLoader: {
-		modules: [ path.join( __dirname, './loaders' ), 'node_modules' ]
-	},
-
 	entry: {
 		Classic: path.resolve( __dirname, 'src', 'ckeditor-classic.js' ),
 	},
@@ -85,10 +81,6 @@ module.exports = {
 							minify: true
 						} )
 					},
-					{
-						// test: /.js$/,
-						loader: 'lowercase-file',
-					}
 				]
 			}
 		]
